@@ -42,6 +42,21 @@ Tienda Online
 <a href="?p=carrito">Carrito</a>
 
 <a  href="?p=admin">Administrador</a>
+
+
+<?php
+if(isset($_SESSION['id_cliente'])){
+
+?>
+
+<a class="pull-right subir " href="?p=salir">Salir</a>
+<a class="pull-right subir" href="#"><?=nombre_cliente($_SESSION['id_cliente'])?></a>
+
+<?php
+}
+?>
+
+
 </div> 
 
 <div class="cuerpo">
