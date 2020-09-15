@@ -31,8 +31,8 @@ if(isset($_SESSION['id'])){
     <center>
         <form method="post" action="">
             <div class="loginAdmin">
-                <div class="form-group"><br><br><br>
-                <label ><h4><i clas="fa fa-key"></i>Iniciar como Administrador</h4></label><br><br>
+                <div class="form-group"><br><br>
+                <label ><h4><i clas="fa fa-key"></i>Iniciar como Administrador</h4><br> </label><br><br>
                 <input class="form-control" type="text" name="username"placeholder="Ingresa su usuario"><br>
                 </div>
 
@@ -41,7 +41,8 @@ if(isset($_SESSION['id'])){
                 </div>
 
                 <div class="form-group">
-                    <button class="btn btn-submit" type="submit" name="enviar"><i class="fa fasing-in"></i>Ingresar</button><br><br><br>
+                    <button class="btn btn-submit" type="submit" name="enviar"><i class="fa fasing-in"></i>Ingresar</button><br><br>
+                    
                 </div>
             </div>
         </form>
