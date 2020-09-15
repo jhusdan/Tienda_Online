@@ -3,6 +3,7 @@
 
 if(isset($_SESSION['id_cliente'])){
     redir("./");
+    
 }
 if(isset($enviar)){
 
@@ -18,7 +19,7 @@ if(isset($enviar)){
         if(isset($return)){
             redir("?p=".$return);
         }else{
-        redir("?p=productos"); //para inicir sesion poner  redir("./)
+        redir("./"); //para inicir sesion poner  redir("./)
         }
     }else{
         alert("Los datos son incorectos");
@@ -26,12 +27,13 @@ if(isset($enviar)){
     }
 
 }
+
     ?>    
     <center>
         <form method="post" action="">
             <div class="loginAdmin">
-                <div class="form-group"><br><br><br>
-                <label ><h4><i clas="fa fa-key"></i>Iniciar Ssion</h4></label><br><br>
+                <div class="form-group"><br><br>
+                <label ><h4><i clas="fa fa-key"></i>Iniciar Sesion</h4><br> </label><br><br>
                 <input class="form-control" type="text" name="username"placeholder="Ingresa su usuario"><br>
                 </div>
 
@@ -40,7 +42,7 @@ if(isset($enviar)){
                 </div>
 
                 <div class="form-group">
-                    <button class="btn btn-submit" type="submit" name="enviar"><i class="fa fasing-in"></i>Ingresar</button><br><br><br>
+                    <button class="btn btn-submit" type="submit" name="enviar"><i class="fa fasing-in"></i>Ingresar</button><br><br>
                 </div>
             </div>
         </form>
