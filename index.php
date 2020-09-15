@@ -42,7 +42,7 @@ Tienda Online
 <a href="?p=carrito">Carrito</a>
 
 <a  href="?p=admin">Administrador</a>
-
+<a  href="?p=login">Usuario</a>
 
 <?php
 if(isset($_SESSION['id_cliente'])){
