@@ -1,5 +1,9 @@
 <?php
-check_user("productos");
+alert("iniciar como usuario ");
+check_user("");
+    
+
+
 
 if(isset($agregar) && isset($cant)){
     $idp=clear($agregar);
