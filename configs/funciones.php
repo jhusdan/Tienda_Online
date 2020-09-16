@@ -39,7 +39,7 @@ function alert($var){
 
 function check_user($url){
     if(!isset($_SESSION['id_cliente'])){
-        redir("?p=login &return=$url");
+        redir("?p=login && return=$url");
         
     }
 }
