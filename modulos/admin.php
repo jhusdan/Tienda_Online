@@ -21,9 +21,12 @@ if(isset($enviar)){
 
 if(isset($_SESSION['id'])){
     ?>
-    <a href="?p=agregar_producto">
-    <button class="btn btn-primary"><i class="fa fa-plus-circle"></i>Agregar Productos</button>
-    </a>
+        <a href="?p=agregar_producto">
+        <button class="btn btn-primary"><i class="fa fa-plus-circle"></i>Agregar Productos</button></a>
+
+        <a href="?p=agregar_categoria">
+        <button class="btn btn-primary"><i class="fa fa-plus-circle"></i>Agregar Categoria</button></a>
+        
     <?php
 
    }else{
@@ -33,11 +36,11 @@ if(isset($_SESSION['id'])){
             <div class="loginAdmin">
                 <div class="form-group"><br><br>
                 <label ><h4><i clas="fa fa-key"></i>Iniciar como Administrador</h4><br> </label><br><br>
-                <input class="form-control" type="text" name="username"placeholder="Ingresa su usuario"><br>
+                <input class="form-control" type="text" name="username"placeholder="Ingresa su usuario"required><br>
                 </div>
 
                 <div class="form-group">
-                <input class="form-control" type="password" name="passwords"placeholder="Ingresa su password"><br>
+                <input class="form-control" type="password" name="passwords"placeholder="Ingresa su password"required><br>
                 </div>
 
                 <div class="form-group">
