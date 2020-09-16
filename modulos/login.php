@@ -34,11 +34,11 @@ if(isset($enviar)){
             <div class="loginAdmin">
                 <div class="form-group"><br><br>
                 <label ><h4><i clas="fa fa-key"></i>Iniciar Sesion</h4><br> </label><br><br>
-                <input class="form-control" type="text" name="username"placeholder="Ingresa su usuario"><br>
+                <input class="form-control" type="text" name="username"placeholder="Ingresa su usuario"required><br>
                 </div>
 
                 <div class="form-group">
-                <input class="form-control" type="password" name="passwords"placeholder="Ingresa su password"><br>
+                <input class="form-control" type="password" name="passwords"placeholder="Ingresa su password"required><br>
                 </div>
 
                 <div class="form-group">
