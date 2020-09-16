@@ -46,20 +46,18 @@ Tienda Online
 
 <?php
 if(isset($_SESSION['id_cliente'])){
-
 ?>
-
 <a class="pull-right subir " href="?p=salir">Salir</a>
 <a class="pull-right subir" href="#"><?=nombre_cliente($_SESSION['id_cliente'])?></a>
-
 <?php
 }
 ?>
-
-
 </div> 
 
-<div class="cuerpo">
+
+
+
+<div class="cuerpo">  
     <?php
     if(file_exists("modulos/".$p.".php")){
         include "modulos/".$p.".php";
@@ -71,8 +69,10 @@ if(isset($_SESSION['id_cliente'])){
 </div>
 
 <div class="footer">
-    Copyright AnySlehider &copy; <?=date("y")?>
+   Tienda Online <br><br>
+   for Acosta Huaman jhusdan
 </div>
 
 </body>
+
 </html>
