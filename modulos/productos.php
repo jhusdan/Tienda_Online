@@ -1,5 +1,5 @@
 <?php
-alert("iniciar como usuario ");
+alert("Iniciaste como usuario? ");
 check_user("");
     
 
